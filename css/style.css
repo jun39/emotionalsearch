@@ -1,0 +1,315 @@
+body{
+    margin: 0;
+}
+
+.app{
+    
+}
+
+
+.top{
+    display:flex;
+    text-emphasis: EMO SEARCH;
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 150%;
+
+}
+
+.white{
+    width: 20%;
+    -webkit-box-align: center;
+    vertical-align: middle;
+}
+
+.yellow{
+    
+    width: 20%;
+    background-color: hsl(52, 92%, 65%);
+}
+
+.red{
+    
+    width: 20%;
+    background-color: #cd5638;
+}
+
+.blue{
+    
+    width: 20%;
+    background-color: #7a8bc3;
+}
+
+.pink{
+    
+    width: 20%;
+    background-color: #dd9dbf;
+}
+
+.green{
+    
+    width: 20%;
+    background-color: #c7ddae;
+}
+
+.photo{
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%
+}
+
+.image{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#selectImageButton{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+    display: inline;
+}
+
+#sourceImage{
+    height: auto;
+    width: 40%;
+    display: inline;
+}
+
+/* ここから下円グラフ */
+#myPieChart{
+    width: 100%;
+}
+
+
+/* ここから下　エモティコン・アイコン */
+#description{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    
+}
+.icon{
+    margin:0 auto;
+    display: flex;
+    text-align: center;
+}
+.happy{
+    color: #f8e352;
+    
+    margin-left: 25px;
+    font-size: 50px;
+    font-family: 'Londrina Shadow', cursive;
+    
+}
+.angry{
+    color: #cd5638;
+    float: left;
+    margin-left: 25px;
+    font-size: 50px;
+    font-family: 'Londrina Shadow', cursive;
+    
+}
+.sad{
+    color: #7a8bc3;
+    float: left;
+    margin-left: 25px;
+    font-size: 50px;
+    font-family: 'Londrina Shadow', cursive;
+    
+}
+.surprise{
+    color: #dd9dbf;
+    float: left;
+    margin-left: 25px;
+    font-size: 50px;
+    font-family: 'Londrina Shadow', cursive;
+    
+}
+.natural{
+    color: #c7ddae;
+    float: left;
+    margin-left: 25px;
+    font-size: 50px;
+    font-family: 'Londrina Shadow', cursive;
+    
+}
+
+
+
+/* ここから下ビデオリスト */
+
+.output{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+#videoList{
+    
+    margin:0 auto;
+    padding-top:40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#videoList .video{
+    
+    
+    height:315px;
+    
+    width:100%;
+}
+#videoList .video iframe{
+    z-index: 10;
+    border:none;
+    height:315px;
+    width:100%;
+}
+/* 下はスマホの対応 */
+
+@media screen and (max-width:768px){
+    .icon{
+        display: flex;
+        justify-content: space-between
+        
+    }
+    .happy{
+        color: #f8e352;
+        float: left;
+        margin-left: 10px;
+        font-size: 20px;
+        font-family: 'Londrina Shadow', cursive;
+        
+    }
+    .angry{
+        color: #cd5638;
+        float: left;
+        margin-left: 10px;
+        font-size: 20px;
+        font-family: 'Londrina Shadow', cursive;
+        
+    }
+    .sad{
+        color: #7a8bc3;
+        float: left;
+        margin-left: 10px;
+        font-size: 20px;
+        font-family: 'Londrina Shadow', cursive;
+        
+    }
+    .surprise{
+        color: #dd9dbf;
+        float: left;
+        margin-left: 10px;
+        font-size: 20px;
+        font-family: 'Londrina Shadow', cursive;
+        
+    }
+    .natural{
+        color: #c7ddae;
+        float: left;
+        margin-left: 10px;
+        font-size: 20px;
+        font-family: 'Londrina Shadow', cursive;
+        
+    }
+    /* 下はdescriptinのスマホの対応 */
+    
+    
+    
+    /* ここから下ビデオリスト */
+    
+    .output{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #videoList{
+        
+        margin:0 auto;
+        padding-top:40px;
+        width: 100%;
+        
+        
+        
+    }
+    #videoList .video{
+        
+        
+        
+        height:315px;
+        
+        width:100%;
+    }
+    #videoList .video iframe{
+        
+        border:none;
+        height:315px;
+        width:100%;
+    }
+    /* 下はスマホの対応 */
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ここから下の JSON のスクリプトはブラックスボックスなので触らぬ神にたたりなし */
+#responseTextArea{
+    display: none;
+    margin:0;
+    width:0;
+    height:0;
+}
+.UIInput{
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+}
+#shareList{
+    height: 50px;
+    display: block;
+}
+i.fab{
+    width: 5px;
+    height: 5px;
+}
+
