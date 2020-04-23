@@ -2,11 +2,11 @@ from django.db import models
 import numpy as np
 import keras,sys
 import tensorflow as tf
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 from PIL import Image
 import io,base64
 # Create your models here.
-graph=tf.get_default_graph()
+graph=tf.compat.v1.get_default_graph()
 class Photo(models.Model):
     image=models.ImageField(upload_to="photos")
 

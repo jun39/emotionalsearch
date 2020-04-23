@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'emosearch.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'analisisdb', 
+        'NAME': 'emosearch_db', 
         'USER': 'root', 
         'PASSWORD': env('DB_PASS'),
         'OPTIONS': {
