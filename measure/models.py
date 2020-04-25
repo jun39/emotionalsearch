@@ -10,9 +10,9 @@ graph=tf.compat.v1.get_default_graph()
 class Photo(models.Model):
     image=models.ImageField(upload_to="photos")
 
-    IMAGE_SIZE=100#画像サイズ
-    MODEL_PATH="./imageai/ml_models/model-1.h5"
-    imagename=[自分で作ったデータラベル]
+    IMAGE_SIZE=50#画像サイズ
+    MODEL_PATH="./measure/ml_model/model-1.h5"
+    imagename=["happy","sad","angry"]
     image_len=len(imagename)
 
     def predict(self):
