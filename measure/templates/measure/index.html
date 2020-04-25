@@ -25,4 +25,85 @@
 </div>
 <br></br>
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142799648-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142799648-1');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6d14426640.js"></script>
+    
+    <title>EMO SEARCH!!</title>
+</head>
+
+<body>
+    <!-- 下はボディ内の全要素（app） -->
+    <div class="app">
+
+    <!-- 下はトップページのデザイン -->
+    <div class=top>
+        
+        <div class="white">EMO SEARCH</div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="pink"></div>
+        <div class="green"></div>
+    </div>
+    
+    <!-- 下は写真選択と表示 -->
+    <div class="photo">
+        <div class="image">
+        <input type="file" name="inputImage" id="selectImageButton"/>
+        <img src="image/placeholder.svg" id="sourceImage"/>
+        </div>
+    </div>
+    
+    <!-- 下は円グラフ -->
+    <div class="graph">
+        <canvas id="myPieChart"></canvas>
+        <div id="description"></div>
+    </div>
+     
+    <!-- 下は動画の出力 -->
+    <div class="output">
+        <div id="videoList"></div>
+    </div>
+
+    <!-- 下はSNSシェアボタン -->
+    <div id="shareBtn"></div>
+
+</div> <!-- このdivは<class=app>のdiv閉じタグです。 -->
+
+<!--ここから下の JSON のスクリプトはブラックスボックスなので触らぬ神にたたりなし -->
+<div id="wrapper">
+    <div id="jsonOutput" >
+    <textarea id="responseTextArea" class="UIInput"></textarea>
+    </div>                
+</div>  
+<!--ここから上の JSON のスクリプトはブラックスボックスなので触らぬ神にたたりなし -->
+
+<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+<script src="./jquery-3.1.1.min.js"></script>
+<script src="./emo_sample.js"></script>
+<a href="https://twitter.com/intent/tweet?text=%20%E3%80%90%E7%94%BB%E5%83%8F%E3%81%A7%E6%A4%9C%E7%B4%A2%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%80%80EMO%20SEARCH%E3%80%91-%E3%81%9D%E3%81%AE%E7%94%BB%E5%83%8F%E3%80%81%E3%81%9D%E3%81%AE%E6%84%9F%E6%83%85%E3%80%81%E3%81%9D%E3%81%AE%E7%B5%90%E6%9E%9C-%0A%E6%84%9F%E6%83%85%E3%81%AB%E5%90%88%E3%82%8F%E3%81%9B%E3%81%9F%E9%9F%B3%E6%A5%BD%E3%82%92%E8%A1%A8%E7%A4%BA%EF%BC%81%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AFURL%E3%81%8B%E3%82%89%EF%BC%81&url=https%3A%2F%2Femoemosearch.herokuapp.com%2Femo_sample.html&hashtags=EMOSEARCH" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Femoemosearch.herokuapp.com%2Femo_sample.html&layout=button_count&size=small&width=72&height=20&appId" width="72" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+</body>
+</html>
+
+
 {% endblock %}
